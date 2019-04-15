@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Student Grades</title>
+</head>
+
+<body>
+<h1>Assignment #2</h1>
+
+    <table id="table">
+        <thead class="header">
+            <th class="normal" onclick="highlightCol(this)" >Student Name</th>
+            <th class="normal" onclick="highlightCol(this)" >ID</th>
+            <th class="normal" onclick="highlightCol(this)">Assignment 1</th>
+            <th class="normal">Final Grade</th>
+        </thead>
+        <tbody>
+            <tr class="normal">
+                <td id="text" class="normal" contenteditable="true" onclick="highlightRow(this)" align="left">-</td>
+                <td id="text" class="normal" contenteditable="true" align="left">-</td>
+                <td id="number" class='normal' contenteditable="true" onkeyup="calculateAverage()">-</td>
+                <td id="number" class='normal'>-</td>
+            </tr>
+        </tbody>
+    </table>
+
+<div id="buttonDiv">
+    <button onclick="calculateAverage()">Calculate Average</button>
+    <br>
+    <button onclick="addRow()">Insert Row</button>
+    <button onclick="addCol()">Insert Column</button>
+    <button onclick="deleteRow()">Delete Row</button>
+    <button onclick="deleteCol()">Delete Column</button>
+    <button onclick="retrieveData()">Retrieve Data</button>
+    <button onclick="saveToCookie()">Save To Cookie</button>
+    <button onclick="loadCookie()">Load Table</button>
+</div>
+</body>
+</html>
